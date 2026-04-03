@@ -2117,7 +2117,7 @@ form label {
 
 
 #btnConfirmar:hover {
-  background: linear-gradient(135deg, #caa06a, #e9d7c0);
+  background: linear-gradient(135deg, #6b705c, #6b705c);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
