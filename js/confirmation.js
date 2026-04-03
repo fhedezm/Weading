@@ -1,6 +1,15 @@
 let invitacionData = null;
 
-fetch('https://script.google.com/macros/s/AKfycbzinEhIkN2_lP8hrjxnWK4nBU9skazAVSuU_RY8giKAAe1jnNGXx6Zzqo7570o85aUfrw/exec')
+function mostrarToast() {
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+fetch(`https://script.google.com/macros/s/AKfycbzinEhIkN2_lP8hrjxnWK4nBU9skazAVSuU_RY8giKAAe1jnNGXx6Zzqo7570o85aUfrw/exec?id=${id}`)
   .then(res => res.json())
   .then(data => {
     console.log('DATA:', data); // para debug
